@@ -1,12 +1,12 @@
 ---
-description: Get list of available bus companies
+description: Available endpoints for companies API
 ---
 
 # Companies
 
-{% swagger method="get" path="/bus/companies" baseUrl="" summary="This API endpoint returns an array of objects, each object representing a verified and activated bus company in the system." expanded="true" %}
+{% swagger method="get" path="/bus/companies" baseUrl="" summary="Get list of available bus companies" expanded="true" %}
 {% swagger-description %}
-
+This API endpoint returns an array of objects, each representing a verified and activated bus company.
 {% endswagger-description %}
 
 {% swagger-response status="200: OK" description="Success" %}

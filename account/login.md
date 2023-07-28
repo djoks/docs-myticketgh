@@ -1,12 +1,8 @@
----
-description: Login using a valid phone number and password.
----
-
 # Login
 
-{% swagger method="post" path="/auth/login" baseUrl="" summary="This endpoint allows the user to pass in their valid credentials in exchange for an access token as well as other relevant user data." expanded="true" %}
+{% swagger method="post" path="/auth/login" baseUrl="" summary="Login using a valid phone number and password." expanded="true" %}
 {% swagger-description %}
-A valid phone number and password must be passed within the body.
+This endpoint allows the user to pass in their valid credentials in exchange for an access token as well as other relevant user data.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="phone" required="true" %}

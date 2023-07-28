@@ -4,7 +4,7 @@ description: Available endpoints for schedules API
 
 # Schedules
 
-{% swagger method="get" path="/bus/schedules" baseUrl="" summary="Get all bus schedules" expanded="true" %}
+{% swagger method="get" path="/bus/schedules" baseUrl="" summary="Get all schedules" expanded="true" %}
 {% swagger-description %}
 This API endpoint returns an array of available bus schedule objects grouped by bus type.
 {% endswagger-description %}
@@ -14,11 +14,11 @@ Selected bus company alias.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="origin" required="true" %}
-Selected bus route origin.
+Selected bus route origin name.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="destination" required="true" %}
-Selected bus route destination.
+Selected bus route destination name.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="date" required="true" %}
@@ -158,7 +158,7 @@ Selected departure date.
 
 
 
-{% swagger method="get" path="/bus/schedules/:id" baseUrl="" summary="Get bus schedule by ID" %}
+{% swagger method="get" path="/bus/schedules/:id" baseUrl="" summary="Get schedule by ID" expanded="true" %}
 {% swagger-description %}
 This API endpoint returns a single bus schedule object.
 {% endswagger-description %}

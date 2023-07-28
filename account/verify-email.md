@@ -1,14 +1,10 @@
----
-description: Verify registered user account via email.
----
-
 # Verify Email
 
 
 
-{% swagger method="get" path="verify/{email}" baseUrl="" summary="This operation generates a signed url and makes a url redirect." expanded="true" %}
+{% swagger method="get" path="verify/{email}" baseUrl="" summary="Verify registered user account via email." expanded="true" %}
 {% swagger-description %}
-
+This operation verified the user's email and generates a signed URL.
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="email" %}

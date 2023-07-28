@@ -1,12 +1,58 @@
 ---
-description: Get list of routes by company and origin
+description: Available endpoints for routes API
 ---
 
-# Route Destinations
+# Routes
 
-{% swagger method="get" path="/bus/routes" baseUrl="" summary="" expanded="true" %}
+{% swagger method="get" path="" baseUrl="/bus/routes" summary="Get route origins" expanded="true" %}
 {% swagger-description %}
+This API endpoint returns an array of location names taken from related route objects' "origin" field.
+{% endswagger-description %}
 
+{% swagger-parameter in="query" name="origin" required="true" %}
+This param simply specifies which part of the route object needs to be returned and can be left empty as long as the key name is present.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="company" required="true" %}
+Alias of selected bus company.
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Success" %}
+```
+[
+    "Accra",
+    "Achimota",
+    "Banda Nkwanta",
+    "Cape coast",
+    "Dadieso",
+    "Dambai",
+    "Dormaa",
+    "Drobo",
+    "Kete Krachi",
+    "Kintampo",
+    "Linda D'or",
+    "Nandom",
+    "Nkawkaw",
+    "Sunyani",
+    "Wa"
+]
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="get" path="/bus/routes" baseUrl="" summary="Get route destinations" expanded="true" %}
+{% swagger-description %}
+Get the list of routes by company and origin.
+
+\
+
+
+
+
+\
+
+
+This API endpoint returns an array of route objects based on the selected route origin and company names.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="origin" required="true" %}

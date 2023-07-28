@@ -1,12 +1,8 @@
----
-description: Send a password reset request via mail.
----
-
 # Reset Password
 
-{% swagger method="post" path="/auth/reset" baseUrl="" summary="This API endpoint generates and sends a signed url for a password reset to the user's registered email address." expanded="true" %}
+{% swagger method="post" path="/auth/reset" baseUrl="" summary="Send a password reset request via mail." expanded="true" %}
 {% swagger-description %}
-
+This API endpoint generates and sends a signed URL for a password reset to the user's registered email address.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="email" type="String" required="true" %}

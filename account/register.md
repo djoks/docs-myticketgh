@@ -1,12 +1,8 @@
----
-description: Create a new unique account.
----
-
 # Register
 
-{% swagger method="post" path="/auth/register" baseUrl="" summary="This endpoint allows the user to pass their personal info in order to create a brand new unverified account." expanded="true" %}
+{% swagger method="post" path="/auth/register" baseUrl="" summary="Create a new unique account." expanded="true" %}
 {% swagger-description %}
-
+This endpoint allows the user to pass their personal info in order to create a brand new unverified account.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="fullname" required="true" %}

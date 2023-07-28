@@ -1,12 +1,12 @@
 ---
-description: Get route pick-up points.
+description: Available endpoints for pick-up points API
 ---
 
 # Pick-Up Points
 
-{% swagger method="get" path="/bus/pickup-points" baseUrl="" summary="This API endpoint returns an array of pickup-point objects based on the selected route origin and destination names." expanded="true" %}
+{% swagger method="get" path="/bus/pickup-points" baseUrl="" summary="Get route pick-up points" expanded="true" %}
 {% swagger-description %}
-
+This API endpoint returns an array of pickup-point objects based on the selected route origin and destination names.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="origin" required="true" %}

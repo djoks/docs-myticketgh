@@ -1,12 +1,12 @@
 ---
-description: Get list of active bus seats
+description: Available endpoints for seats API
 ---
 
 # Seats
 
-{% swagger method="get" path="/bus/seats" baseUrl="" summary="This API endpoint returns an array of active bus seat objects." expanded="true" %}
+{% swagger method="get" path="/bus/seats" baseUrl="" summary="Get list of active bus seats" expanded="true" %}
 {% swagger-description %}
-
+This API endpoint returns an array of active bus seat objects.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="schedule_id" type="integer" required="true" %}

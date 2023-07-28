@@ -15,8 +15,7 @@
 ## 🚍 Trip Planner
 
 * [Companies](trip-planner/companies.md)
-* [Route Origins](trip-planner/route-origins.md)
-* [Route Destinations](trip-planner/route-destinations.md)
+* [Routes](trip-planner/routes.md)
 * [Pick-Up Points](trip-planner/pick-up-points.md)
 * [Available Dates](trip-planner/available-dates.md)
 
