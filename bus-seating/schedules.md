@@ -1,5 +1,5 @@
 ---
-description: Get a list of available bus schedules
+description: Available endpoints for schedules API
 ---
 
 # Schedules
@@ -26,10 +26,8 @@ Selected departure date.
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Success" %}
-{% code overflow="wrap" lineNumbers="true" %}
-```json
-{
-    "executive": [
+<pre class="language-json" data-overflow="wrap" data-line-numbers><code class="lang-json"><strong>{
+</strong>    "executive": [
         {
             "id": 14832,
             "batch_no": 1,
@@ -154,7 +152,43 @@ Selected departure date.
         }
     ]
 }
+</code></pre>
+{% endswagger-response %}
+{% endswagger %}
+
+
+
+{% swagger method="get" path="/bus/schedules/:id" baseUrl="" summary="Get bus schedule by ID" %}
+{% swagger-description %}
+This API endpoint returns a single bus schedule object.
+{% endswagger-description %}
+
+{% swagger-parameter in="path" required="true" %}
+1
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Success" %}
+```json
+{
+	"id": 1,
+	"batch_no": 1,
+	"route_id": 1,
+	"destination": "Achimota",
+	"weekday": "friday",
+	"reportingTime": "09:00",
+	"departureTime": "10:00",
+	"period": "AM",
+	"fare": "50.00",
+	"busType": {
+		"name": "Executive",
+		"minCapacity": 26,
+		"maxCapacity": 30,
+		"arrangement": "2x1"
+	},
+	"ticketsSold": 0,
+	"almostSoldOut": false,
+	"soldOut": false
+}
 ```
-{% endcode %}
 {% endswagger-response %}
 {% endswagger %}
