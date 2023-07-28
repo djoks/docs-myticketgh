@@ -1,3 +1,7 @@
+---
+description: Production environment variables for basic HTTP requests.
+---
+
 # Configuration
 
 | Name            | Value                      |

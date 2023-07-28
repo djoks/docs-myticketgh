@@ -4,9 +4,9 @@ description: Get a list of available bus schedules
 
 # Schedules
 
-{% swagger method="get" path="/bus/schedules" baseUrl="" summary="This API endpoint returns an array of available bus schedule objects grouped by bus type." expanded="true" %}
+{% swagger method="get" path="/bus/schedules" baseUrl="" summary="Get all bus schedules" expanded="true" %}
 {% swagger-description %}
-
+This API endpoint returns an array of available bus schedule objects grouped by bus type.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="company" required="true" %}
